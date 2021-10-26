@@ -1,0 +1,107 @@
+.h1 {
+  color: blueviolet;
+  font-size: 20px;
+}
+
+.form {
+  height: 200px;
+  width: 1200px;
+  text-align: center;
+  color: blueviolet;
+  padding-top: 20%;
+}
+.img {
+  width: 128%;
+  top: 100px;
+  left: -10px;
+  position: bottom;
+}
+.form > .h1 {
+  color: green;
+}
+.offer {
+  background-color: #d79922;
+  font-size: 20px;
+  color: black;
+  padding: 10px 60px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.foo {
+  background-image: linear-gradient(
+    rgb(95, 41, 82),
+    rgb(17, 75, 114),
+    rgb(0, 0, 0)
+  );
+  width: 50%;
+  margin: 0 auto;
+  color: rgb(218, 159, 50);
+
+  /* Small Devices, Tablets */
+  @media only screen and (min-width: 768px) {
+    width: 75%;
+    background-color: green;
+  }
+
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width: 992px) {
+    width: 50%;
+    background-color: pink;
+  }
+}
+
+.blink {
+  background-color: #58ca71;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  margin-top: 40px;
+  font-size: 20px;
+  color: rgb(230, 13, 13);
+  padding: 10px 60px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px 0px;
+  cursor: pointer;
+  animation: var(--blink-time) blinker linear infinite;
+  -webkit-animation: var(--blink-time) blinker linear infinite;
+  -moz-animation: var(--blink-time) blinker linear infinite;
+  --blink-time: 4s;
+}
+
+@-moz-keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
